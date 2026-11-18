@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+        <a href="../index.html">Home</a>
+        <a href="https://wiwaquito.org/" target="_blank">Página Oficial</a>
+        <a href="pages/galeria.html" target="_blank">Galería</a>
+        <a href="">Acerca</a>
+    </nav>
+    <hr>
+    <!--Formulario Registro-->
+    <form action="#">
+        <label for="Nombre">Ingrese su Nombre: </label>
+        <br>
+        <input type="text" id="Nombre" placeholder="Nombre" size="10" required>
+        <br><br>
+        <label for="email">Ingrese su Email:</label>
+        <br>
+        <input type="email" id="email" placeholder="Email" required>
+        <br><br>
+        <label for="contraseña">Ingrese su Contraseña: </label>
+        <br>
+        <input type="password" id="contraseña" placeholder="Contraseña" required>
+        <br><br>
+        <label for="fecha">Ingrese su fecha de nacimineto: </label>
+        <br>
+        <input type="date" id="fecha" required>
+        <br><br>
+        <label for="Familiares">Cargas Familiares:</label>
+        <br>
+        <input type="number" id="Familiares">
+        <br><br>
+        <label for="#">Género: </label>
+        <br>
+        <label for=""><input type="radio" id="Masculino" name="genero">Masculino</label>
+        <label for=""><input type="radio" id="Femenino" name="genero">Femenino</label>
+        <label for=""><input type="radio" id="Otro" name="genero">Otro</label>
+        <br><br>
+        <label for="ciudad"> Seleccione su ciudad: </label>
+        <select name="ciudad" id="ciudad">
+            <option value="opcion" disabled selected>Seleccionar Opción</option>
+            <option value="quito">Quito</option>
+            <option value="cuenca">Cuenca</option>
+            <option value="latacunga">Latacunga</option>
+            <option value="ibarra">Ibarra</option>
+        </select>
+        <br><br>
+        <label for="foto">Seleccione su foto</label>
+        <br>
+        <input type="file" id="foto">
+        <br><br>
+        <label for="comentarios">Deje sus comentarios: </label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escriba sus comentarios"></textarea>
+        <!--Botones: 
+        button: botón simple sin funcionalidad
+        submit: envia datos (DB)
+        reset: limpiar el formulario-->
+        <br><br>
+        <button>Botón simple</button>
+        <input type="submit" value="Enviar">
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
